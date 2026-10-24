@@ -24,11 +24,33 @@
   z-index: 1;
   animation: highway 5s linear infinite;
   background-repeat: repeat-x;
+  display: block;
 }
 
 @keyframes highway{
 
   100%{
     transform: translateX(-3400px);
+  }
+}
+
+.city{
+  background-image: url(city.png);
+  background-repeat: repeat-x;
+  width: 500%;
+  height: 250px;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  animation: city 20s linear infinite;
+  position: absolute;
+  display: block;
+  z-index: 1;
+}
+
+@keyframes  city{
+
+  100%{
+    transform: translateX(-1400px);
   }
 }
